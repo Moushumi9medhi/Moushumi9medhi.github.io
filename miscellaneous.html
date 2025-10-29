@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miscellaneous — Moushumi Medhi</title>
+<link href="Assets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="topBar" role="banner">
+    <div class="topBar-inner">
+      <div class="siteTitle">Moushumi Medhi</div>
+      <nav class="topNav" aria-label="Main navigation">
+        <a href="index_lioryariv_v4icons toleft.html">Home</a>
+        <a href="index_lioryariv_v4icons toleft.html#research">Research Summary</a>
+        <a href="index_lioryariv_v4icons toleft.html#publications">Publications</a>
+      </nav>
+      <div class="theme-toggle-wrapper">
+        <div class="theme-switch" id="themeToggle"
+             onclick="toggleTheme()"
+             role="button"
+             aria-label="Toggle dark mode"
+             tabindex="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="mainContent" style="padding-top: 28px;">
+    <section class="sectionMisc">
+  <h2 class="sectionTitle">MISCELLANEOUS</h2>
+  <hr class="sectionTitleRule2">
+      <div class="sectionContent">
+        <h3>Reviewer</h3>
+        <p>
+          <a href="https://www.webofscience.com/wos/author/record/ADP-6453-2022" target="_blank" rel="noopener">
+            <img src="Assets/images/CLVT.png" alt="Web of Science" width="28">
+          </a>
+          <a href="https://www.linkedin.com/in/moushumi-medhi-369-iit-kharagpur/details/volunteering-experiences/1761042211088/single-media-viewer/?type=DOCUMENT&profileId=ACoAAAvUNlUB07P5aKcSSMU4njVjq11uTcjqGCk" target="_blank" rel="noopener" style="margin-left:10px;">
+            <img src="Assets/images/certificate.svg" alt="Certificate" width="28" height="28">
+          </a>
+        </p>
+        <ul>
+          <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
+          <li>IEEE Access</li>
+          <li>ACM Transactions on Multimedia Computing Communications and Applications (TOMM)</li>
+          <li>Winter Conference on Applications of Computer Vision (WACV)</li>
+          <li>IET Image Processing</li>
+          <li>Springer Cluster Computing</li>
+        </ul>
+		<br>
+        <h3>Supervision</h3>
+        <p>Supervised 3 B.Tech, 2 B.Tech-M.Tech dual degree, and 2 M.Tech students closely at IIT Kharagpur.</p>
+        <br>
+        <h3>Highlighted Projects Supervised</h3>
+        <ul>
+
+          <li>Point-Cloud Completion.</li>
+          <li>Depth Completion using Denoising Diffusion Probabilistic Models.</li>
+          <li>Frequency-Aware Monocular Depth Estimation: Exploiting Spectral Information for Accurate
+Depth Perception.</li>
+		  <li>Single Image Depth Estimation via Surface Normal Estimation and Edge Guidance.</li>
+		  <li>Vision transformer for Supervised Monocular Depth Estimation.</li>
+		  <li>Light Field Depth Estimation using Deep Learning.</li>
+		  </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr class="footerDivider">
+    <p class="footerDisclaimer">&copy; Moushumi Medhi</p>
+  </footer>
+
+  <style>
+    .sectionMisc .sectionContent, .sectionMisc .sectionContent p, .sectionMisc .sectionContent li {
+      color: rgba(146,146,146,1.00);
+    }
+    /* small icon spacing for title */
+    .sectionTitle img { vertical-align: middle; }
+  </style>
+  <script>
+  // Dark Theme Toggle Functionality (copied from main page)
+  function toggleTheme() {
+      const body = document.body;
+      const themeToggle = document.getElementById('themeToggle');
+      
+      body.classList.toggle('dark-theme');
+      if(themeToggle) themeToggle.classList.toggle('active');
+      
+      if (body.classList.contains('dark-theme')) {
+          localStorage.setItem('theme', 'dark');
+      } else {
+          localStorage.setItem('theme', 'light');
+      }
+  }
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+      const savedTheme = localStorage.getItem('theme');
+      const themeToggle = document.getElementById('themeToggle');
+      
+      if (savedTheme === 'dark') {
+          document.body.classList.add('dark-theme');
+          if(themeToggle) themeToggle.classList.add('active');
+      }
+      // keyboard accessibility for the toggle
+      if(themeToggle){
+        themeToggle.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleTheme();
+            }
+        });
+      }
+  });
+  </script>
+</body>
+</html>

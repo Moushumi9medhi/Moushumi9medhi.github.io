@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moushumi Medhi</title>
+<link href="Assets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Assets/images/favicon.svg" type="image/svg+xml">
+<style type="text/css">
+</style>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body alink = "#282727" vlink = "#9b9b9b" link = "#9b9b9b">
+<!-- Top bar (site title / nav) with theme toggle moved inside -->
+	<div class="topBar" role="banner" id="top">
+	<div class="topBar-inner">
+		<div class="siteTitle">Moushumi Medhi</div>
+			<nav class="topNav" aria-label="Main navigation">
+				<a href="#top">Home</a>
+				<a href="#research">Research Summary</a>
+				<a href="#publications">Publications</a>
+			</nav>
+
+			<!-- Menu button (three lines) -->
+			<div class="menu-wrapper">
+				<button class="menu-button" id="menuButton" aria-haspopup="true" aria-expanded="false" aria-label="Open menu">
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+				</button>
+				<div class="menu-dropdown" id="menuDropdown" role="menu" aria-labelledby="menuButton">
+					<a href="miscellaneous.html" role="menuitem">Miscellaneous</a>
+				</div>
+			</div>
+
+			<div class="theme-toggle-wrapper">
+				<div class="theme-switch" id="themeToggle" 
+						 onclick="toggleTheme()" 
+						 role="button" 
+						 aria-label="Toggle dark mode"
+						 tabindex="0">
+				</div>
+			</div>
+	</div>
+</div>
+<!-- Header content -->
+
+<header>
+  <div class="profileSection">
+    <!-- Left Column -->
+    <div class="profileLeft">
+      <div class="profilePhoto">
+        <img src="Assets/images/profile_pic.png" alt="Profile photo" width="259">
+      </div>
+
+      <div class="profileEmail">
+        <p>Email: <a href="mailto:medhi.moushumi@gmail.com">medhi.moushumi@gmail.com</a></p>
+      </div>
+
+      <aside class="socialNetworkNavBar">
+        <a href="mailto:medhi.moushumi@gmail.com"><img src="Assets/images/mail.png" alt="Mail" width="30"></a>
+        <a href="https://github.com/Moushumi9medhi" target="_blank"><img src="Assets/images/github.png" alt="GitHub" width="30"></a>
+        <a href="https://scholar.google.com/citations?user=Ky1xbpUAAAAJ&hl=en" target="_blank"><img src="Assets/images/scholar.jpg" alt="Scholar" width="30"></a>
+        <a href="https://www.linkedin.com/in/moushumi-medhi-369-iit-kharagpur/" target="_blank"><img src="Assets/images/LinkedIn.jpg" alt="LinkedIn" width="30"></a>
+        <a href="https://www.webofscience.com/wos/author/record/ADP-6453-2022" target="_blank"><img src="Assets/images/CLVT.png" alt="Web of Science" width="28"></a>
+      </aside>
+    </div>
+
+    <!-- Right Column -->
+    <section class="profileHeader">
+      <h1>Moushumi Medhi</h1>
+      <h3>PhD Candidate @ IIT Kharagpur</h3>
+			<hr>
+			<p>
+			 Hello! I am a Ph.D student at Indian Institute of Technology (IIT) Kharagpur, advised by <a href="https://www.iitkgp.ac.in/department/EE/faculty/ee-rajiv" target="_blank">Prof. Rajiv Ranjan Sahay</a>.
+				Previously, I worked as a Research Consultant in the Department of Electrical Engineering at IIT Kharagpur with Professor Sahay, on an industry-sponsored project funded by and delivered to Altair Engineering India Pvt. Ltd., Bangalore.
+				Before that, I received my M.Tech. in Electronics and Communication Engineering from Tezpur Central University, where I worked on a government-funded project under the Council of Scientific and Industrial Research (CSIR), carried out at the CSIR–Central Electronics Engineering Research Institute (CSIR-CEERI), Pilani. As a master's dissertation intern at CSIR–CEERI, I was supervised by <a href="https://www.linkedin.com/in/jagdish-raheja-954986b/?originalSubdomain=in" target="_blank">Dr. Ing. Jagdish Lal Raheja</a>. I hold a B.Tech. in Electronics and Telecommunication Engineering from Assam Engineering College.
+			</p>
+
+			<!-- Research interests boxed panel -->
+			<div class="researchBox" id="research">
+				<p>
+					My research interests broadly lie in Machine Learning and Computer Vision, with a focus on generative AI and 3D vision. During my PhD, my thesis work has centered on developing and optimizing lightweight generative models to improve speed and efficiency of ill-posed 2D-3D vision problems (e.g., depth restoration, depth estimation) under limited data and constrained compute resources.
+					Beyond my thesis, my research has explored the integration of physical image formation models with learning-based approaches. This includes work on depth from defocus, geometry-aware scene reconstruction from light field images, and generative representations for realistic view synthesis and restoration.
+					I have also engaged with emerging topics at the intersection of vision and language, augmented reality, diffusion-based generative modeling, and classification and pattern recognition-based problems.
+				</p>
+			</div>
+    </section>
+  </div>
+</header>
+
+
+
+<!-- content -->
+<section class="mainContent"> 
+ 
+  
+	<section class="section2" id="publications">
+	<h2 class="sectionTitle">Publications</h2>
+  	<p style="color: rgba(146,146,146,1.00);">
+	  (*equal contribution, ✉ corresponding author)
+	</p>
+
+    <hr class="sectionTitleRule">
+
+    <hr class="sectionTitleRule2">
+
+    	 <!-- DFD  -->
+	  <div onmouseout="dfd_stop()" onmouseover="dfd_start()">
+	  	
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="dfd_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/DFD.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+ 
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Dark Channel-Assisted Depth-from-Defocus from a Single Image </h2>
+      		<h3 class="sectionContentSubTitle"> 
+			  <b>Moushumi Medhi<sup>✉</sup></b>, 
+			  <span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>
+			</h3>
+
+			
+			
+			</h3>		
+		  	<h3 class="sectionContentSubTitle"><em>Preprint 2025
+
+			</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+		  <div class="dropdown"><span></span><a  href="https://moushumi9medhi.github.io/Depth-from-defocus/" target="_blank">Project Page</a></div>
+		  
+		<div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			  <p style="text-align:left;"> We estimate scene depth from a single defocus-blurred image using the dark channel as a complementary cue, leveraging its ability to capture local statistics and scene structure. Traditional depth-from-defocus (DFD)
+				methods use multiple images with varying apertures or focus. Single-image DFD is underexplored due to its inherent challenges. Few attempts have focused on depth-from-defocus (DFD) from a single defocused image because the problem is underconstrained. 
+				Our method uses the relationship between local defocus blur and contrast variations as depth cues to improve scene structure estimation. The pipeline is trained end-to-end with adversarial learning. Experiments on real data demonstrate that incorporating the dark channel prior into single-image DFD provides meaningful depth estimation, validating our approach.
+				</p>
+						
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2506.06643" target="_blank">Paper</a></div>
+		</aside>
+	 </div>
+
+	  <br><br>
+    <!-- end DFD -->
+	  
+	   <!-- MVA  -->
+	  <div onmouseout="MVA_stop()" onmouseover="MVA_start()">
+
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="MVA_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/DC_app_AR.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Adversarial Learning for Unguided Single Depth Map Completion of Indoor Scenes </h2>			
+			<h3 class="sectionContentSubTitle"> 
+            <b>Moushumi Medhi<sup>✉</sup></b>,
+			<span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>     
+			</h3>		
+
+			
+		  	<h3 class="sectionContentSubTitle"><em>MVA 2025
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			<p style="text-align:left;"> Single depth map completion in the absence of any guidance from color images is a challenging, ill-posed problem in computer vision. Most of the conventional depth map completion approaches rely on information extracted from the corresponding color image and require heavy computations and optimization-based postprocessing functions, which cannot yield results in real time. Successful application of generative adversarial networks has led to significant progress in several computer vision problems including, color image inpainting. However, contrasting local and non-local features of depth maps compared to color images prevents the direct application of deep learning models designed for color image inpainting to depth map completion. Motivated by these challenges, in this work we propose to use deep adversarial learning to derive plausible estimates of missing depth information in a single degraded observation without any guidance from the corresponding RGB frame and any postprocessing. Different types of depth map degradations, such as simulated random and textual missing pixels as well as contiguous large holes found in Kinect depth maps, are effectively handled to reconstruct clean depth maps. An ablation study is also performed to investigate the contribution of our adversarial network architecture towards the recovery of missing scene depth information. We carry out an illustrative experimental analysis on the NYU-Depth V2 dataset and perform zero-shot generalization on the Middlebury and Matterport3D datasets, comparing our proposed method with several state-of-the-art algorithms. The experimental results demonstrate robustness and efficacy of the proposed approach.
+            </p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://link.springer.com/article/10.1007/s00138-024-01652-x" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://github.com/Moushumi9medhi/Depth-Completion" target="_blank">Code</a></div>
+		</aside>
+	 </div>
+	  
+    <br><br>
+    <!-- end MVA -->
+ 
+ <!-- Occ-Removal  -->
+	  <div onmouseout="OccRemoval_stop()" onmouseover="OccRemoval_start()">
+
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="dfd_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/OccRemoval.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+	
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Deep Generative Adversarial Network for Occlusion Removal from a Single Image </h2>
+        <h3 class="sectionContentSubTitle"> 
+          <span style="color: rgba(146,146,146,1.00);">Sankaraganesh Jonna</span>,
+		  <b>Moushumi Medhi<sup>✉</sup></b>, 
+          <span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>
+		  
+		  
+        </h3>
+		  	<h3 class="sectionContentSubTitle"><em>Preprint 2024
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			    <p style="text-align:left;"> Nowadays, the enhanced capabilities of in-expensive
+				imaging devices have led to a tremendous increase in the acquisition and sharing of multimedia content over the Internet. Despite
+				advances in imaging sensor technology, annoying conditions like occlusions hamper photography and may deteriorate the
+				performance of applications such as surveillance, detection, and recognition. Occlusion segmentation is difficult because of scale
+				variations, illumination changes, and so on. Similarly, recovering a scene from foreground occlusions also poses significant challenges due to the complexity of accurately estimating the occluded
+				regions and maintaining coherence with the surrounding context. In particular, image de-fencing presents its own set of challenges
+				because of the diverse variations in shape, texture, color, patterns, and the often cluttered environment. This study focuses on the
+				automatic detection and removal of occlusions from a single image. We propose a fully automatic, two-stage convolutional
+				neural network for fence segmentation and occlusion completion. We leverage generative adversarial networks (GANs) to synthesize realistic content, including both structure and texture, in a
+				single shot for inpainting. To assess zero-shot generalization, we evaluated our trained occlusion detection model on our proposed
+				fence-like occlusion segmentation dataset.
+            </p>  
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2409.13242" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://github.com/Moushumi9medhi/Occlusion-Removal" target="_blank">Code</a></div>
+		  <div class="dropdown"><span></span><a href="https://huggingface.co/datasets/NeuroVizv0yaZ3R/IITKGP_Fence_dataset" target="_blank">Dataset</a></div>
+
+		</aside>
+	 </div>
+	  
+	  <br><br>
+	  <!-- end Occ-Removal -->
+	  
+	  <!-- Distill-DBD  -->
+	  <div onmouseout="DistillDBD_stop()" onmouseover="DistillDBD_start()">
+
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="DistillDBD_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/DistillDBD.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Distill-DBDGAN: Knowledge Distillation and Adversarial Learning Framework for Defocus Blur Detection </h2>
+			<h3 class="sectionContentSubTitle"> 
+          
+			  <span style="color: rgba(146,146,146,1.00);">Sankaraganesh Jonna*</span>,
+			  <b>Moushumi Medhi*<sup>✉</sup></b>, 
+			  <span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>
+			  
+			  
+			 </h3>	
+		  	<h3 class="sectionContentSubTitle"><em>ACM TOMM 2023  
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav" style="margin-top:0%"> 
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			 <p style="text-align:left;"> Defocus blur detection (DBD) aims to segment the blurred regions from a given image affected by defocus blur. 
+			It is a crucial pre-processing step for various computer vision tasks. With the increasing popularity of small mobile devices, 
+			there is a need for a computationally efficient method to detect defocus blur accurately. 
+			We propose an efficient defocus blur detection method that estimates the probability of each pixel being focused or blurred in resource-constraint devices. 
+			Despite remarkable advances made by the recent deep learning-based methods, they still suffer from several challenges such as background clutter, scale sensitivity, indistinguishable low-contrast focused regions from out-of-focus blur, and especially high computational cost and memory requirement. To address the first three challenges, we develop a novel deep network that efficiently detects blur map from the input blurred image. Specifically, we integrate multi-scale features in the deep network to resolve the scale ambiguities and simultaneously modeled the non-local structural correlations in the high-level blur features. To handle the last two issues, we eventually frame our DBD algorithm to perform knowledge distillation by transferring information from the larger teacher network to a compact student network. All the networks are adversarially trained in an end-to-end manner to enforce higher order consistencies between the output and the target distributions. Experimental results demonstrate the state-of-the-art performance of the larger teacher network, while our proposed lightweight DBD model imitates the output of the teacher network without significant loss in accuracy. 
+            </p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://dl.acm.org/doi/10.1145/3557897" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://github.com/Moushumi9medhi/Distill-DBDGAN" target="_blank">Code</a></div>
+		</aside>
+	</div>
+	  
+	  <br><br>
+
+    <!-- end Distill-DBD -->
+	
+	  <!-- LiDAR  -->
+	  <div onmouseout="LiDAR_stop()" onmouseover="LiDAR_start()">	  
+		
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="LiDAR_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/LiDAR.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Deep Two-Stage LiDAR Depth Completion </h2>
+			<h3 class="sectionContentSubTitle"> 
+			  <b>Moushumi Medhi<sup>✉</sup></b>, 
+			  <span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>
+			</h3>	
+		  	<h3 class="sectionContentSubTitle"><em>Conference on Computer Vision and Image Processing (CVIP 2025), <b style="color:darksalmon">Best paper award</b> 
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav" style="margin-top:0%"> 
+		<div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			              <p style="text-align:left;"> LiDAR depth completion aims at accurately estimating
+					dense depth maps from sparse and noisy LiDAR depth scans, often with the aid of the color image. However, most of the existing deep learningbased LiDAR depth completion approaches focus on learning one-stage
+					networks with computationally intensive RGB-D fusion strategies to compensate for the prediction errors. To eliminate such drawbacks, we
+					have explored a simple yet effective two-stage learning framework where the former stage generates a coarse dense output which is processed in the
+					latter stage to produce a fine dense depth map. The refined dense depth map is obtained at the output of the second stage by employing iterative
+					feedback mechanism that removes any ambiguity associated with a single feed-forward network. Our two-stage learning mechanism allows for
+					simple RGB-D fusion operations devoid of high computational overload. Experiments conducted on the KITTI depth completion benchmark validate the efficacy of our proposed method.
+								</p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://link.springer.com/chapter/10.1007/978-3-031-11349-9_44" target="_blank">Paper</a></div>
+		<div class="dropdown"><span></span><a href="https://github.com/Moushumi9medhi/LiDAR-DepthCompletion" target="_blank">Code</a></div>
+		</aside>
+	  </div>
+	  
+	  <br><br>
+
+    <!-- end LiDAR -->
+
+	  
+	  <!-- NonLocal  -->
+	  <div onmouseout="NonLocal_stop()" onmouseover="NonLocal_start()">	  
+	
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="NonLocal_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/NonLocal.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+	
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> A Non-local Low-rank and Sparsity based Framework for Depth Map Inpainting </h2>
+      		<h3 class="sectionContentSubTitle"> 
+            <span style="color: rgba(146,146,146,1.00);">Sankaraganesh Jonna<sup>✉</sup></span>,
+		    <b>Moushumi Medhi</b>
+            </h3>	
+		  	<h3 class="sectionContentSubTitle"><em>ICCE 2020
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			     <p style="text-align:left;"> Depth is an important cue along with RGB data in many computer vision applications. Depth maps captured by most of the mainstream depth sensors are noisy with a lot of missing depth information causing annoying visual artifacts. In this work, we proposed a joint framework for color guided depth map inpainting. We exploit the redundancy of RGBD data by integrating non-local low-rank patch regularization along with local structural information in an optimization framework. The proposed non-local patch-based regularization prior in addition to a complementary local smoothness prior facilitate robust recovery of the sharp depth discontinuities and the missing depth information.
+				</p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://ieeexplore.ieee.org/document/9427704" target="_blank">Paper</a></div>
+		</aside>
+		</div>
+	  
+	  <br><br>
+    <!-- end NonLocal -->
+	  
+	<!-- SHM  -->
+	  <div onmouseout="SHM_stop()" onmouseover="SHM_start()">	  
+
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="SHM_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/SHM.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> Real-time Video Surveillance Based Structural Health Monitoring of Civil Structures Using Artificial Neural Network </h2>
+			<h3 class="sectionContentSubTitle"> 
+			<b>Moushumi Medhi<sup>✉</sup></b>, 
+			<span style="color: rgba(146,146,146,1.00);">Aradhana Dandautiya</span>,
+		    <span style="color: rgba(146,146,146,1.00);">Jagdish Lal Raheja</span>
+
+			<br>
+			
+			</h3>	
+		  	<h3 class="sectionContentSubTitle"><em>J. Nondestruct. Eval. 2019
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			<p style="text-align:left;"> Modern world’s incessantly increasing outdoor traffic load has eventually led to structural health concern and continuous health monitoring of large scale civil structures such as bridges, roads, highways, etc. In this paper, we propose a computer vision based non-destructive structural health monitoring (SHM) method using high speed camera system combined with the brilliance of artificial intelligence. A number of appreciable SHM techniques had been reported that utilizes wired or wireless smart sensors, but the use of nondestructive techniques, such as, digital high speed imaging were rarely employed for detection of dynamic vibrations of civil structures. In the current research, we have developed a high speed video imaging based structural health monitoring system that utilizes blob detection based motion tracking algorithm. It provides factual information regarding localization and displacement of the target object or an existing feature in the civil structure. The modal parameters were subsequently extracted to analyze the level of severity of structural damage within the civil structures. Also, an artificial neural network is trained to infer the qualitative characteristics of structural vibrations based on vibration intensity and the network inferences can be correlated with the conditions of the structure. The efficacy of our vision system in remote measurement of dynamic displacements was demonstrated through a shaking table and a slip desk experiment. The experimental results demonstrate real-time output with satisfactory performance.
+			</p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://link.springer.com/article/10.1007/s10921-019-0601-x" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a  href="https://github.com/Moushumi9medhi/STRUCTURAL-HEALTH-MONITORING-SHM-" target="_blank">Code</a></div>
+		  <div class="dropdown"><span></span><a  href="https://www.youtube.com/watch?v=mekb40luapE" target="_blank">Video</a></div>
+
+		</aside>
+		</div>
+	  
+	  <br><br>
+
+	<!-- end SHM -->
+
+	<!-- Text-RecAugDL-Logo  -->
+	  <div onmouseout="TextRecAugDLLogo_stop()" onmouseover="TextRecAugDLLogo_start()">	  
+
+		<div class="sectionContent" style="padding:0px; vertical-align:middle;">
+		  <div class="one">
+			<div class="two" id="TextRecAugDLLogo_video_container">
+			  <video width="100%" height="100%" muted autoplay loop playsinline>
+				<source src="Assets/images/TextRecAugDLLogo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			</div>
+		  </div>
+		</div>
+	
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle"> A Text Recognition Augmented Deep Learning Approach for Logo Identification </h2>
+      		<h3 class="sectionContentSubTitle"> 
+            <b>Moushumi Medhi<sup>✉</sup></b>, 
+            <span style="color: rgba(146,146,146,1.00);">Subham Sinha</span>,
+		    <span style="color: rgba(146,146,146,1.00);">Rajiv Ranjan Sahay</span>
+	 		</h3>		
+		  	<h3 class="sectionContentSubTitle"><em>ICVGIP 2016
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%"> 
+			<div class="dropdown"><span></span><a href="https://moushumi9medhi.github.io/Logo-TextRecog/" target="_blank">Project</a></div>
+			<div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+            <p style="text-align:left;"> Logo/brand name detection and recognition in unstructured and
+			highly unpredictable natural images has always been a challenging problem. We notice that in most natural images logos are accompanied with associated text.
+			Therefore, we address the problem of logo recognition by first detecting and isolating text of varying color, font size and orientation in the input image using
+			affine invariant maximally stable extremal regions (MSERs). Using an off-the-shelf OCR, we identify the text associated with the logo image. Then an
+			effective grouping technique is employed to combine the remaining stable regions based on spatial proximity of MSERs. Deep learning has the advantage
+			that optimal features can be learned automatically from image pixel data. This motivates us to feed the clustered logo candidate image regions to a pre-trained
+			deep convolutional neural network (DCNN) to generate a set of complex features which are further input to a multiclass support vector machine (SVM) for
+			classification. We tested our proposed logo recognition system on 32 logo classes, and a non-logo class obtained by combining FlickrLogos-32 and MICC
+			logo databases, amounting to a total of 23582 training and testing images. Our method yields robust recognition performance, outperforming state-of-the-art
+			techniques achieving 97.8% precision, 95.7% recall and 95.7% average accuracy on the combined MICC and FlickrLogos-32 datasets and a precision of
+			98.6%, recall of 97.9% and average accuracy of 99.6% on only the FlickrLogos-32 dataset.
+              </p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://link.springer.com/chapter/10.1007/978-3-319-68124-5_13" target="_blank">Paper</a></div>
+		  <div class="dropdown"><span></span><a href="https://moushumi9medhi.github.io/Logo-TextRecog/docs/POSTER.pdf" target="_blank">Poster</a></div>
+        
+		</aside>
+		</div>
+	  
+	  <br><br>
+
+    <!-- end Text-RecAugDL-Logo -->
+	
+	</section>
+
+	  
+  <hr>
+  
+</section>
+
+
+
+<footer>
+	<hr class="footerDivider">
+	<div class="footer-row">
+		<p class="footerDisclaimer">Design inspired by <a href="https://lioryariv.github.io/" target="_blank" rel="noopener" style="text-decoration:none; color: rgba(146,146,146,1.00);">Lior Yariv’s webpage</a>.</p>
+		<!-- ClustrMaps embed placeholder (replace with the snippet ClustrMaps gives you) -->
+		<div id="clustrmaps-badge" aria-hidden="false" title="ClustrMaps visitor map placeholder">
+			<!-- Paste your ClustrMaps <a><img ...></a> snippet here -->
+		</div>
+	</div>
+
+<p class="footerNote">
+	<a href="#" class="back-to-top" aria-label="Back to Top">
+		<span aria-hidden="true">↑</span>
+	</a>
+</p>
+</footer>
+
+<script>
+// Menu toggle script (inserted before theme script)
+(function(){
+	var btn = document.getElementById('menuButton');
+	var menu = document.getElementById('menuDropdown');
+	if(!btn || !menu) return;
+	btn.addEventListener('click', function(e){
+		e.stopPropagation();
+		var expanded = btn.getAttribute('aria-expanded') === 'true';
+		btn.setAttribute('aria-expanded', String(!expanded));
+		menu.style.display = expanded ? 'none' : 'flex';
+	});
+	document.addEventListener('click', function(e){
+		if(!btn.contains(e.target) && !menu.contains(e.target)){
+			btn.setAttribute('aria-expanded', 'false');
+			menu.style.display = 'none';
+		}
+	});
+})();
+
+	// Highlight nav links based on scroll position (nearest section to top)
+	document.addEventListener('DOMContentLoaded', function(){
+		var navLinks = Array.from(document.querySelectorAll('.topBar .topNav a'));
+		var sections = navLinks.map(function(a){
+			var id = a.getAttribute('href').slice(1);
+			return document.getElementById(id);
+		});
+
+		function clearActive(){ navLinks.forEach(function(a){ a.classList.remove('active'); }); }
+
+		function onScroll(){
+			var topBarHeight = document.querySelector('.topBar').offsetHeight || 0;
+			var scrollPos = window.scrollY + topBarHeight + 4; // small buffer
+
+			// find the last section whose top is <= scrollPos
+			var current = null;
+			sections.forEach(function(sec){
+				if(!sec) return;
+				var rectTop = sec.getBoundingClientRect().top + window.scrollY;
+				if(rectTop <= scrollPos){ current = sec; }
+			});
+
+			if(current){
+				clearActive();
+				var href = '#' + current.id;
+				var link = document.querySelector('.topBar .topNav a[href="'+href+'"]');
+				if(link) link.classList.add('active');
+			} else {
+				// if no section is above, show Home as active
+				clearActive();
+				var home = document.querySelector('.topBar .topNav a[href="#top"]');
+				if(home) home.classList.add('active');
+			}
+		}
+
+		// initial run and attach listener
+		onScroll();
+		window.addEventListener('scroll', onScroll, { passive: true });
+
+		// Ensure Home link scrolls to the very top (works with fixed topBar)
+		var homeLink = document.querySelector('.topBar .topNav a[href="#top"]');
+		if(homeLink){
+			homeLink.addEventListener('click', function(e){
+				e.preventDefault();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+				clearActive();
+				homeLink.classList.add('active');
+			});
+		}
+	});
+// Back to top functionality
+	var backBtn = document.querySelector('.back-to-top');
+	if(backBtn){
+		backBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+
+		// show the button only when near bottom
+		function checkBottom(){
+			var scrollY = window.scrollY || window.pageYOffset;
+			var viewportH = window.innerHeight || document.documentElement.clientHeight;
+			var docH = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+					if(scrollY + viewportH >= docH - 1){
+				backBtn.classList.add('visible');
+			} else {
+				backBtn.classList.remove('visible');
+			}
+		}
+		checkBottom();
+		window.addEventListener('scroll', checkBottom, { passive: true });
+		window.addEventListener('resize', checkBottom);
+	}
+
+ 
+// Dark Theme Toggle Functionality
+function toggleTheme() {
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+    
+    body.classList.toggle('dark-theme');
+    themeToggle.classList.toggle('active');
+    
+    // Save preference to localStorage
+    if (body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+// Load saved theme on page load
+window.addEventListener('DOMContentLoaded', (event) => {
+    const savedTheme = localStorage.getItem('theme');
+    const themeToggle = document.getElementById('themeToggle');
+    
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        themeToggle.classList.add('active');
+    }
+});
+
+// Keyboard accessibility
+document.getElementById('themeToggle').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleTheme();
+    }
+});
+</script>
+</body>
+</html>

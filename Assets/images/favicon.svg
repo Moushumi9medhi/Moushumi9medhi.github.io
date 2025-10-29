@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="1">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FFCC99"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="0%" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" fill="url(#sky)"/>
+  <path d="M 0,70 Q 20,60 40,65 T 70,70 T 100,75 L 100,100 L 0,100 Z" fill="#3D6B3D"/>
+  <path d="M 10,80 Q 30,72 50,78 T 80,85 T 100,88 L 100,100 L 0,100 Z" fill="#5F9F5F"/>
+  <!-- sun on the left -->
+  <circle cx="28" cy="40" r="12" fill="url(#sun)"/>
+  <circle cx="28" cy="40" r="14" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.6"/>
+  <circle cx="28" cy="40" r="16" fill="none" stroke="#FFD700" stroke-width="0.3" opacity="0.4"/>
+  <!-- trident on the right -->
+  <g transform="translate(66,20) scale(0.6)" stroke="#6B7A8F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 0 C4 8,4 12,10 16"/>
+    <path d="M18 0 V40"/>
+    <path d="M30 0 C32 8,32 12,26 16"/>
+  </g>
+</svg>
